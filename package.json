@@ -1,0 +1,34 @@
+{
+  "name": "MirrorMirrorOnTheWallSkill",
+  "version": "1.0.0",
+  "description": "Lambda function for Alexa Skill Mirror Mirror, which uses AWS IoT to enable communication between Alexa and Magic Mirror.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanaz/MirrorMirrorOnTheWallSkill"
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "AWS Lambda",
+    "Alexa",
+    "skill",
+    "AWS IoT",
+    "device gateway",
+    "Google Search Engine",
+    "Youtube"
+  ],
+  "author": "Joanna Zhang",
+  "contributors": "https://github.com/joanaz/MirrorMirrorOnTheWallSkill/graphs/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joanaz/MirrorMirrorOnTheWallSkill/issues"
+  },
+  "homepage": "https://github.com/joanaz/MirrorMirrorOnTheWallSkill#readme",
+  "dependencies": {
+    "ask-sdk": "latest",
+    "aws-sdk": "latest",
+    "moment": "latest",
+    "moment-timezone": "latest"
+  }
+}

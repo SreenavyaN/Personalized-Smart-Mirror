@@ -1,0 +1,70 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my mirror",
+            "intents": [
+			    {
+                    "name": "MirrorMirrorHelloIntent",
+                    "slots": [],
+                    "samples": [
+                        "good evening",
+                        "good afternoon",
+                        "good morning",
+                        "hey",
+                        "hi",
+                        "hello"
+                    ]
+                },
+				{
+					"name": "SetAlarmIntent",
+					"slots": [
+						{
+							"name": "Time",
+							"type": "AMAZON.TIME"
+						},
+						{
+							"name": "Duration",
+							"type": "AMAZON.DURATION"
+						}			
+					],
+					"samples": [
+						"Set alarm at {Time}",
+						"Set alarm for {Time}",
+						"Alarm in {Duration}",
+						"Make an alarm for {Time}",
+						"Set an alarm in {Duration}"
+					]
+				},
+				{
+                    "name": "ShowTextIntent",
+                    "slots": [
+                        {
+                            "name": "displayText",
+                            "type": "LIST_OF_TEXT"
+                        }
+                    ],
+                    "samples": [
+                        "say {displayText}",
+						"show {displayText}",
+						"display {displayText}",
+                        "show text of {displayText}",
+						"display text of {displayText}"
+                    ]
+                }
+			],
+			"types": [
+				{
+					"name": "LIST_OF_TEXT",
+					"values": [
+						{"name":{"value":"hi"}},
+						{"name":{"value":"hello"}},
+						{"name":{"value":"hello everyone"}},
+						{"name":{"value":"good morning display"}},
+						{"name":{"value":"good morning to you"}},
+						{"name":{"value":"how are you doing"}}
+					]
+				}
+			]
+		}
+	}
+}
